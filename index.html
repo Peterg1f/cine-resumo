@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineResumo 🎥🍿</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ffcc00" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registrado com sucesso!"))
+        .catch(error => console.log("Erro ao registrar o Service Worker:", error));
+    }
+  </script>
+  <style>
+    /* estilos mantidos como no original */
+    body { font-family: 'Segoe UI', sans-serif; background: #000; color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>CineResumo 🎥🍿</h1>
+    <h2>Seu guia rápido para o universo cinematográfico</h2>
+    <!-- restante do HTML omitido por brevidade -->
+  </div>
+</body>
+</html>
