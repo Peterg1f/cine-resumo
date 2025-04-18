@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head><link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192x192.png">
+<meta name="theme-color" content="#000000">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CineResumo 🎥🍿</title>
@@ -26,5 +29,11 @@
     <h2>Seu guia rápido para o universo cinematográfico</h2>
     <!-- restante do HTML omitido por brevidade -->
   </div>
-</body>
+</body><script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log("✅ Service Worker registrado:", reg))
+      .catch(err => console.error("❌ Erro ao registrar o SW:", err));
+  }
+</script>
 </html>
